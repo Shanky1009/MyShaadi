@@ -1,0 +1,12 @@
+*** Variables ***
+
+#Appium Capabilities for Android
+${Appium_Server}                    http://0.0.0.0:4724/wd/hub
+${automationName}                   UiAutomator2
+${android_Platform_Version}         11
+${Android_Platform_Name}            Android
+${android_Device_Name}              Pixel 2
+${Package_Name}                     com.shaadi.android
+${Activity_Name}                    com.shaadi.android.ui.splash.SplashScreenActivity
+#${APK_Path}                         ${EXECDIR}${/}
+${adbExecTimeout}                   20000ms

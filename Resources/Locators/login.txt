@@ -1,0 +1,17 @@
+*** Variables ***
+
+# login screen
+${welcomeLogin_btn}         //*[@resource-id='com.shaadi.android:id/btn_morph_login']
+
+${heading_txtView}          //*[@text='Login to your account']
+
+${emailID_edtTxt}           //*[@resource-id='com.shaadi.android:id/edt_username']
+${enterTxt_emailid}         sha2nkyaar@gmail.com
+${password_edtTxt}          //*[@resource-id='com.shaadi.android:id/edt_password']
+${enterTxt_password}        Shank@1009
+${login_btn}                //*[@resource-id='com.shaadi.android:id/btn_login']
+
+#post login screen
+${skip_title}             //*[@resource-id='com.shaadi.android:id/menu_skip']
+${menu_close}             //*[@resource-id='com.shaadi.android:id/menu_close']
+${home_tab}               //*[@resource-id='com.shaadi.android:id/tvMyShaadi']
