@@ -6,9 +6,9 @@ ${welcomeLogin_btn}         //*[@resource-id='com.shaadi.android:id/btn_morph_lo
 ${heading_txtView}          //*[@text='Login to your account']
 
 ${emailID_edtTxt}           //*[@resource-id='com.shaadi.android:id/edt_username']
-${enterTxt_emailid}         sha2nkyaar@gmail.com
+${enterTxt_emailid}         <enter email id here>
 ${password_edtTxt}          //*[@resource-id='com.shaadi.android:id/edt_password']
-${enterTxt_password}        Shank@1009
+${enterTxt_password}        <enter password here>
 ${login_btn}                //*[@resource-id='com.shaadi.android:id/btn_login']
 
 #post login screen

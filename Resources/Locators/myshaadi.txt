@@ -1,0 +1,10 @@
+*** Variables ***
+
+# my shaadi screen
+${myshaadi_title}                               //*[@text='My Shaadi']
+${premium_matches_title}                        //*[contains(@text,'Premium Matches')]
+${new_matches_title}                            //*[contains(@text,'New Matches')]
+${premium_widget_profile1}                      //*[contains(@text,'Premium Matches')]//parent::*//following-sibling::*//*[@resource-id='com.shaadi.android:id/profile_card' and @index='0']
+${new_widget_profile1}                          //*[contains(@text,'New Matches')]//parent::*//following-sibling::*//*[@resource-id='com.shaadi.android:id/profile_card' and @index='0']
+${premium_widget_profile1_connectNow}           //*[contains(@text,'Premium Matches')]//parent::*//following-sibling::*//*[@resource-id='com.shaadi.android:id/profile_card' and @index='0']//*[@text='Connect Now']
+${new_widget_profile1_connectNow}               //*[contains(@text,'New Matches')]//parent::*//following-sibling::*//*[@resource-id='com.shaadi.android:id/profile_card' and @index='0']//*[@text='Connect Now']

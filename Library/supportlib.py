@@ -53,3 +53,26 @@ class supportlib(AppiumLibrary):
         if numtries > int(n):
             return "failure"
         pass
+
+    def scroll_up_android(self, locator, n):
+        driver = self._current_application()
+        src = self.get_source()
+        numtries = 0
+        while not ((src.__contains__(locator)) or (numtries > int(n))):
+            self.swipe_down_once_android()
+            numtries += 1
+            src = self.get_source()
+        if numtries > int(n):
+            return "failure"
+        pass
+
+    def swipe_down_once_android(self):
+        driver = self._current_application()
+        window_size = driver.get_window_size()
+        width = window_size["width"]
+        height = window_size["height"]
+        x = width / 2
+        y = height * 0.5
+        x1 = width / 2
+        y1 = height * 0.8
+        driver.swipe(x, y, x1, y1)
